@@ -1,4 +1,4 @@
-### Update server:
+### Update your server:
 
 ```bash
 sudo apt update
@@ -56,7 +56,7 @@ SEEDS="c4d619f6088cb0b24b4ab43a0510bf9251ab5d7f@54.241.167.190:26656,44d11d4ba92
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.0gchain/config/config.toml
 ```
 
-### Set the config:
+### Prepare the config:
 ```bash
 EXTERNAL_IP=$(wget -qO- eth0.me) \
 PROXY_APP_PORT=26658 \
